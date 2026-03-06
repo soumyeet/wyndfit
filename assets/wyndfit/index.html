@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WyndFit: Stay in the Game</title>
+    <meta name="description" content="WyndFit is a fitness platform with micro-doses of movement.">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar minimal-nav">
+        <a href="#" aria-label="Home" class="brand-link">
+            <img src="../Name Tag.png" alt="WyndFit Logo" class="logo-img">
+        </a>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#assistant">Assistant</a>
+            <a href="#community">Community</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="cta-btn primary" id="btn-join-now">Join Now</button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="animate-up">Stay in the Game.</h1>
+            <p class="animate-up delay-1">Transforming fitness from a forced obligation to a seamless ritual with
+                micro-interventions suited to your needs.</p>
+            <div class="hero-actions animate-up delay-2">
+                <button class="cta-btn primary" id="btn-get-started">Get Started</button>
+            </div>
+        </div>
+        <div class="hero-visual animate-fade delay-3">
+            <div class="glass-card mockup-card">
+                <div class="mockup-header">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                </div>
+                <div class="mockup-body">
+                    <div class="chat-bubble bot">Hey! Need a quick break?</div>
+                    <div class="chat-bubble user">Just have 3 mins between calls.</div>
+                    <div class="chat-bubble bot highlight">Perfect timing. let us do a quick shoulder release. Ready?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features-section">
+        <h2 class="section-title">The Gateway to Movement</h2>
+        <div class="features-grid">
+            <div class="feature-card glass-panel">
+                <i class="fas fa-bolt feature-icon"></i>
+                <h3>Micro-Doses</h3>
+                <p>2-3 minute physical interventions replacing rigid scheduling. Small, satisfying wins to keep you
+                    consistent.</p>
+            </div>
+            <div class="feature-card glass-panel">
+                <i class="fas fa-brain feature-icon"></i>
+                <h3>No Negative Loops</h3>
+                <p>We focus on the psychological gateway to movement. No harsh performance tracking, just meeting you
+                    where you are.</p>
+            </div>
+            <div class="feature-card glass-panel">
+                <i class="fas fa-users feature-icon"></i>
+                <h3>Build a Community</h3>
+                <p>Host and join local events. We believe in movement by the people, for the people.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="assistant" class="assistant-section">
+        <div class="assistant-content">
+            <h2 class="section-title text-left">Your Conversational Companion</h2>
+            <p class="subtitle">A supportive assistant that adapts to your daily chaos. Switch modes depending on your
+                needs.</p>
+
+            <div class="mode-toggles">
+                <button class="mode-btn active" data-mode="normal" id="btn-normal">Normal Mode</button>
+                <button class="mode-btn" data-mode="quiet" id="btn-quiet">Quiet Mode</button>
+            </div>
+
+            <div class="mode-description" id="mode-text">
+                <strong>Normal Mode:</strong> Comprehensive, structured fitness regimes tailored to your physical
+                requirements.
+            </div>
+        </div>
+        <div class="assistant-visual">
+            <div class="chat-interface glass-panel">
+                <div class="chat-header">
+                    <img src="../PFP.png" alt="Wynd Avatar" class="avatar">
+                    <div>
+                        <h4>Wynd</h4>
+                        <span class="status">Online</span>
+                    </div>
+                    <div class="mode-badge" id="chat-mode-badge">Normal</div>
+                </div>
+                <div class="chat-window" id="chat-window">
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Tell me how you are feeling...">
+                    <button aria-label="Send Message"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="community-section">
+        <div class="community-header">
+            <h2 class="section-title">Shared Identity, Collective Accountability</h2>
+            <p>Hosting an event? Searching for one? We've got you covered.</p>
+            <a href="https://chat.whatsapp.com/KliR3Ot2sDdGndz5E7MgGy?mode=gi_t" target="_blank"
+                rel="noopener noreferrer" class="cta-btn primary"
+                style="display: inline-block; text-decoration: none;"><i class="fas fa-plus"></i> Organize Event</a>
+        </div>
+
+        <div class="events-slider">
+            <div class="event-card glass-panel">
+                <div class="event-date">
+                    <span class="day">8</span>
+                    <span class="month">MAR</span>
+                </div>
+                <div class="event-details">
+                    <h3>Run and Rave</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Kohi- The Cafe, Mohali</p>
+                    <p class="organizer">Hosted by FuFu Turtles</p>
+                </div>
+            </div>
+            <div class="event-card glass-panel">
+                <div class="event-date">
+                    <span class="day">13</span>
+                    <span class="month">MAR</span>
+                </div>
+                <div class="event-details">
+                    <h3>Pickleball Canopy Cup</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Chandigarh</p>
+                    <p class="organizer">Hosted by Club Canopy</p>
+                </div>
+            </div>
+            <div class="event-card glass-panel">
+                <div class="event-date">
+                    <span class="day">9</span>
+                    <span class="month">MAR</span>
+                </div>
+                <div class="event-details">
+                    <h3>Cyanothon</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> PU, Chandigarh</p>
+                    <p class="organizer">Hosted by Cyanide, UICET</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer glass-panel">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>WyndFit</h2>
+                <p>Redefining consistency through micro-interventions.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <form class="contact-form" action="mailto:admin@wyndfit.com" method="post" enctype="text/plain">
+                    <input type="email" name="email" placeholder="Your Email Address" required
+                        aria-label="Email Address">
+                    <textarea name="message" placeholder="How can we help?" rows="3" required
+                        aria-label="Message"></textarea>
+                    <button type="submit" class="cta-btn primary">Send Message</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/17wjNehfc2/?mibextid=wwXIfr" target="_blank"
+                        rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/wyndfit" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://chat.whatsapp.com/KliR3Ot2sDdGndz5E7MgGy?mode=gi_t" target="_blank"
+                        rel="noopener noreferrer" aria-label="WhatsApp Community"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 WyndFit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Join Modal -->
+    <div class="modal-overlay" id="whatsapp-modal">
+        <div class="modal-content glass-panel">
+            <button class="close-modal" id="close-modal" aria-label="Close">&times;</button>
+            <div class="modal-body">
+                <i class="fab fa-whatsapp whatsapp-icon"></i>
+                <h2>Join the Community</h2>
+                <p>WyndFit is powered by its people. Join our WhatsApp community to start organizing events, connecting
+                    with others, and staying in the game.</p>
+                <a href="https://chat.whatsapp.com/KliR3Ot2sDdGndz5E7MgGy?mode=gi_t" target="_blank"
+                    rel="noopener noreferrer" class="cta-btn primary w-full text-center"
+                    style="display: block; text-decoration: none;">Join WhatsApp Group</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
